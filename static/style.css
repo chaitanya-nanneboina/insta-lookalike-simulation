@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+/* Logo Spacing */
+.logo-container {
+    margin: 36px 0 12px;
+}
+
+.logo {
+    max-width: 175px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Form Inputs & Floating Labels */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 6px;
+    height: 38px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 9px 8px 7px;
+    font-size: 12px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #a8a8a8;
+}
+
+.input-group label {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8e8e8e;
+    font-size: 12px;
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+}
+
+/* The "Floating" animation */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    font-size: 10px;
+    transform: translateY(-14px);
+}
+
+/* Adjust padding when text is typed */
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+    padding: 14px 8px 2px;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 0;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-btn:hover {
+    background-color: #1877f2;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or {
+    padding: 0 18px;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Facebook & Forgot Password */
+.fb-login a {
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+/* Signup Box */
+.signup-box {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Get App Section */
+.get-app {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.app-buttons img {
+    height: 40px;
+}
+
+/* Footer */
+footer {
+    padding: 40px 20px;
+    color: #8e8e8e;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.footer-copyright select {
+    border: none;
+    background: none;
+    color: #8e8e8e;
+    outline: none;
+}
